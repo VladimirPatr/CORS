@@ -1,7 +1,7 @@
 
-import modulesCreateElements from './modules/createElements.js';
-import modulesControl from './modules/control.js';
-import modulesServiceStorage from './modules/serviceStorage.js';
+import modulesCreateElements from './createElements.js';
+import modulesControl from './control.js';
+import modulesServiceStorage from './serviceStorage.js';
 
 const {
   addContactData,

@@ -1,7 +1,6 @@
 
-import modulesCreateElements from './modules/createElements.js';
-import modulesRender from './modules/render.js';
-import modulesServiceStorage from './modules/serviceStorage.js';
+import modulesCreateElements from './createElements.js';
+import modulesServiceStorage from './serviceStorage.js';
 
 const {
   addContactData,
@@ -17,10 +16,6 @@ const {
   createRow ,  		
 } = modulesCreateElements;
 
-const {
-  renderPhoneBook,
-  renderContacts, 		
-} = modulesRender;
 
 const {
   removeStorage,
