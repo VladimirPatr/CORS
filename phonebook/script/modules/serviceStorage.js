@@ -1,4 +1,35 @@
 
+import modulesCreateElements from './modules/createElements.js';
+import modulesRender from './modules/render.js';
+import modulesControl from './modules/control.js';
+
+const {
+  addContactData,
+  createContainer,
+  createHeader,
+  createLogo,
+  createProposal,
+  createMain,
+  createFooter,
+  createButtonsGroup,
+  createTable,
+  createForm,
+  createRow ,  		
+} = modulesCreateElements;
+
+const {
+  renderPhoneBook,
+  renderContacts, 		
+} = modulesRender;
+
+const {
+  hoverRow,
+  modalControl,
+  deleteControl,
+  addContactPage,
+  formControl,		
+} = modulesControl;
+
 
     //функция удаления контакта из localstorage по номуру телефона
     const removeStorage = (tel) => {

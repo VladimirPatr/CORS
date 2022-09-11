@@ -1,4 +1,39 @@
 
+import modulesCreateElements from './modules/createElements.js';
+import modulesControl from './modules/control.js';
+import modulesServiceStorage from './modules/serviceStorage.js';
+
+const {
+  addContactData,
+  createContainer,
+  createHeader,
+  createLogo,
+  createProposal,
+  createMain,
+  createFooter,
+  createButtonsGroup,
+  createTable,
+  createForm,
+  createRow ,  		
+} = modulesCreateElements;
+
+
+const {
+  hoverRow,
+  modalControl,
+  deleteControl,
+  addContactPage,
+  formControl,		
+} = modulesControl;
+
+const {
+  removeStorage,
+  getStorage,
+  setStorage,
+  firsLoad,		
+} = modulesServiceStorage;
+
+
 //функция возращет(рендерит) создания всех элементов и добавления их в корневой div
 const renderPhoneBook = (app, title) => {
     const header = createHeader()
@@ -39,8 +74,8 @@ const renderPhoneBook = (app, title) => {
   //функция рендера рендера таблицы с заполненнием данными c
     const renderContacts = (elem, data) => {
         const allRow = data.map(createRow);
-    elem.append(...allRow)
-    return allRow
+          elem.append(...allRow)
+          return allRow
   }
 
   export default {

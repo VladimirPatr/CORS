@@ -1,5 +1,33 @@
 
+import modulesCreateElements from './modules/createElements.js';
+import modulesRender from './modules/render.js';
+import modulesServiceStorage from './modules/serviceStorage.js';
 
+const {
+  addContactData,
+  createContainer,
+  createHeader,
+  createLogo,
+  createProposal,
+  createMain,
+  createFooter,
+  createButtonsGroup,
+  createTable,
+  createForm,
+  createRow ,  		
+} = modulesCreateElements;
+
+const {
+  renderPhoneBook,
+  renderContacts, 		
+} = modulesRender;
+
+const {
+  removeStorage,
+  getStorage,
+  setStorage,
+  firsLoad,		
+} = modulesServiceStorage;
   //функция для показа номера тел в шапке при наведении на него в таблице
   const hoverRow = (allRow, logo) => {
     const text = logo.textContent
